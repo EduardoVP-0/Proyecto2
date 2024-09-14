@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    background-color: whitesmoke;
+  }
+  .cabezaPagina{
+    font-size: 20px;
+    padding: 20px 60px;
+    background-image:url('../IMG/Index/FONDO.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .encabezado{
+    position: absolute;
+    top: 10px;
+    left:20px;
+    display: flex;
+    align-items: center;
+  }
+  .encabezado img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .encabezado h2{
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 
+    Arial, sans-serif;
+    color:white
+  }
+  .cabezaPagina h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 
+    Arial, sans-serif;
+    color:orangered;
+  }
+  
+  /* Estilo del menú de navegación */
+.menuNavegacion {
+  list-style-type: none;
+  position: absolute;
+  top: 0;
+  right: 0; 
+  display: flex;
+}
+
+.menuNavegacion li{
+  border-right: 1px solid white;
+}
+li:last-child {
+  border-right: none;
+}
+
+.menuNavegacion li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #333;
+  font-size: 14px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.menuNavegacion li a:hover:not(.active) {
+  background-color: orangered;
+}
+
+.menuNavegacion .active {
+  background-color: #183A9E;
+}
+.menuDesplegable {
+  position: relative;
+  display: inline-block;
+}
+
+.menuDesplegable-contenido {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 1px 1px;
+  z-index: 1;
+}
+
+.menuDesplegable:hover .menuDesplegable-contenido {
+  display: block;
+}
+
+  .gridDiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 40px; 
+  }
+  .gridDiv div {
+    text-align: center;
+  }
+  .gridDiv iframe {
+    width: 560px;
+    height: 315px;
+    object-fit: cover; /* Ajusta la imagen para llenar el área sin deformarse */
+    
+  }
+  .gridDiv div p {
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+  }

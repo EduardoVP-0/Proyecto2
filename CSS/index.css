@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #0F256E;
+}
+.cabezaPagina{
+  font-size: 20px;
+  padding: 20px 60px;
+  background-image:url('../IMG/Index/FONDO.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px; 
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.encabezado{
+  position: absolute;
+  top: 10px;
+  left:20px;
+  display: flex;
+  align-items: center;
+}
+.encabezado img{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.encabezado h2{
+  font-size: 24px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 
+  Arial, sans-serif;
+  color:white
+}
+.cabezaPagina h1{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 
+  Arial, sans-serif;
+  color:orangered;
+}
+.gridDiv {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 40px; 
+}
+
+.gridDiv div {
+  text-align: center;
+}
+
+.gridDiv img {
+  width: 200px;
+  height: 120px;
+  object-fit: cover; /* Ajusta la imagen para llenar el área sin deformarse */
+  margin-bottom: 5px;
+}
+
+a {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 
+  Arial, sans-serif;
+}
+
+a:hover {
+  color: #40BCE6;
+}
+
+.pieDePagina{
+  background-color: #3A3A3A; 
+  color: white;
+  text-align: center; 
+  padding: 20px; 
+  margin-top: 30px;
+  font-size: 14px; 
+  font-weight: bold; 
+  bottom: 0;
+}
+.pieDePagina h2{
+  margin: 0;
+}
